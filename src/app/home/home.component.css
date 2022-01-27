@@ -1,0 +1,15 @@
+.banner{
+  background-image: url('../../assets/images/banner.jpg');
+  height: 770px;
+  background-position: center;
+  background-size: cover;
+}
+.banner h1{
+  color: rgb(51, 48, 48);
+  font-size: 60px;
+  font-weight: bold;
+  top: 35%;
+  left: 35%;
+  
+  position: absolute;
+}
