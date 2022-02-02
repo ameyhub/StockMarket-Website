@@ -1,0 +1,64 @@
+.banner{
+    background-image: url('../../assets/images/banner2.jpg');
+    height: 770px;
+    background-position: top center;
+    background-size: cover;
+  }
+  mat-card {
+      max-width: 600px;
+      margin: auto;
+      top: 180px;
+      text-align: center;
+      max-height: 600px;
+    }
+    
+    .header{
+      text-align: center;
+    
+    }
+    .full-width {
+      width: 80%;
+    }
+    
+    .button-row {
+      padding-top: 5px;
+    }
+    
+    .button-row a {
+      margin-right: 8px;
+      text-align: center;
+    }
+    
+    .forget-password{
+      padding-left: 0px;
+    }
+    
+    .emailInput{
+      padding-top: 10px;
+    }
+    
+    .contentBody {
+      padding: 60px 1rem;
+      background :#1b6ca8;
+      display: block;
+    }
+    
+    .aLink{
+      float: right;
+      padding-right: 60px;
+      text-decoration: none;
+    }
+  
+  a{
+      color: black;
+      text-decoration: none;
+      padding: 0px 0px;
+      font-size: 18px;
+  }
+  i{
+      padding: 0px 10px;
+  }
+  
+  p{
+    font-size: 20px;
+  }

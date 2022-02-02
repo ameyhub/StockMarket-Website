@@ -1,0 +1,58 @@
+<div class="banner">
+    <div class="container">
+      <mat-card>
+        <mat-card-content>
+          <div class="header">
+            <P>Create New Account</P>
+          </div>
+          <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+            <div class="emailInput">
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email</mat-label>
+                <input
+                  formControlName="email"
+                  matInput
+                  placeholder="Enter email address" required
+                />
+                <mat-error *ngIf="!loginForm.controls['email'].valid">
+                    Email is required
+                  </mat-error>
+              </mat-form-field>
+            </div>
+      
+            <div>
+                <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput [type]=" hide ? 'password' : 'text'" required />
+                <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>
+                    {{hide ? 'visibility_off' : 'visibility'}}
+                </mat-icon>
+            </button>
+            <mat-error *ngIf="!loginForm.controls['password'].valid">
+                Password is required
+              </mat-error>
+            </mat-form-field>
+            </div>
+            
+            <button mat-flat-button color="primary">Login</button>
+          </form>
+  
+          <br>
+          <a class="socialIcons" target="_black"><i class="bi bi-facebook"></i></a>
+          <a class="socialIcons" target="_black"><i class="bi bi-google"></i></a>
+          <a class="socialIcons" target="_black"><i class="bi bi-instagram"></i></a>
+          
+          <hr>
+  
+          <div class="button-row">
+            <!-- <p class="create" routerLink="/register">Create New Account</p> -->
+            <a routerLink="/login">Sign Into Your Account </a>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    
+  </div>
+  
